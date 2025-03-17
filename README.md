@@ -57,7 +57,7 @@ This project is a responsive recipe website using data from TheMealDB API. API i
 3. Open `index.html` in a web browser.
 
 ## Presentation Link
-[Presentation Link]()
+[Presentation Link](https://www.loom.com/share/f6d51a7891f44d6889b6b1c14b257af6?sid=b4975c80-e179-4a7e-80c6-485264794528)
 
 ## Author
 Name: [Sadiq Ridwan Abubakar]
