@@ -33,3 +33,36 @@ const displayMeals = (meals) => {
     });
 };
 
+// Function to truncate text
+const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+        return text.substring(0, maxLength) + '...';
+    }
+    return text;
+};
+
+// Extract ingredients and measures from the meal object
+const getIngredients = (meal) => {
+    const ingredients = [];
+    for (let i = 1; i <= 5; i++) {
+        const ingredient = meal[`strIngredient${i}`];
+        const measure = meal[`strMeasure${i}`];
+        if (ingredient && measure) {
+            ingredients.push(`${measure} ${ingredient}`);
+        }
+    }
+    return ingredients;
+};
+
+// Initialize the app
+const init = async () => {
+    const meals = await fetchMeals();
+    if (meals) {
+        displayMeals(meals);
+    } else {
+        console.error('No meals found');
+    }
+};
+
+// Start the app
+document.addEventListener('DOMContentLoaded', init);
