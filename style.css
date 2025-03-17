@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.meal-card {
+    margin-bottom: 20px;
+}
+
+.meal-card img {
+    width: 100%;
+}
+
+.meal-card .card-body {
+    padding: 1rem;
+}
+
+h5{
+    font-weight: bolder;
+}
